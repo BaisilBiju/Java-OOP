@@ -1,0 +1,14 @@
+package OOP;
+import java.util.Scanner;
+public class ReverseNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        System.out.print("Reverse of the number is: ");
+        for (; n > 0; n = n / 10) {
+            System.out.print(n % 10);
+        }
+        sc.close();
+    }
+}
